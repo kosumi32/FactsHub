@@ -1,0 +1,24 @@
+Clarke (handling authentication) -> Frontend
+                |
+                |   Authorize user
+                |
+Authentication tokens (identify user) -> Backend
+                                            |
+                                            |   go and ask Clarke
+                                    Is this token Valid (Permission to access service)
+-----------------------------------------------------------------------------------------------------
+
+pyproject.toml- acts like requirement.txt file
+
+
+In order to have the routes, we need to know what components to render, when a user goes to a particular page
+
+
+🧠 <Route path="/sign-in/*" >
+
+- Starts in /sign-in/ ends in anything, then redirect back to page
+
+
+🧠 <Navigate to="/sign-in" replace />
+
+- replace- Replace them in current window
