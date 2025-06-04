@@ -1,10 +1,12 @@
+2025-6-3
+
 Clarke (handling authentication) -> Frontend
                 |
                 |   Authorize user
                 |
 Authentication tokens (identify user) -> Backend
-                                            |
-                                            |   go and ask Clarke
+    [JWT TOKEN]                             |
+                                            |   go and ask Clarke (Secret key)
                                     Is this token Valid (Permission to access service)
 -----------------------------------------------------------------------------------------------------
 
@@ -22,3 +24,18 @@ In order to have the routes, we need to know what components to render, when a u
 🧠 <Navigate to="/sign-in" replace />
 
 - replace- Replace them in current window
+
+-----------------------------------------------------------------------------------------------------
+
+2025-6-3
+
+Backend Setup
+1. FastAPI setup
+2. Set up routes
+
+- generate challenge
+- get user history
+- handling identification
+
+
+🧠 CORSMiddleware- making use frontend can send requests to backend
